@@ -1,0 +1,512 @@
+/* Site Wide Style Start */
+html {
+    scroll-padding-top: 11vw;
+}
+
+:root {
+    --primary-color: red;
+    --secondary-color: #070614;
+    --tertiary-color: #f4f4fa;
+  }
+
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  Body {
+      color: var(--tertiary-color);
+      font-family: Helvetica, Arial, sans-serif;
+      background-color: var(--secondary-color);
+  }
+
+  /* Site Wide Style End */
+
+  /* HEADER / NAV BAR STYLES START */
+
+  header {
+      padding: 10px 35px 10px 0px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0px;
+      background-color: var(--primary-color);
+      align-items: center;
+      z-index: 9999;
+  }
+    /* Header logo and site title */
+    header .left {
+        text-decoration: none;
+        color: var(--tertiary-color);
+        text-shadow: 0 0 10px rgb(255, 255, 255, 0.5)
+    }
+
+    .left {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        background-color: var(--secondary-color);
+        width: 40%;
+        padding: 0px 35px;
+
+    }
+
+    .left h1 {
+        text-align: start;
+        padding-left: 20px;
+        font-weight: bold;
+        margin: 0;
+        font-size: 2.5vw;
+        
+    }
+
+    .left img {
+        border-radius: 50%;
+        height: 7vw;
+        min-height: 90px;
+    }
+    /* Header logo and Site Title End */
+
+    /* Header Nav Styles Start */
+    header nav {
+        margin: 0;
+        align-content: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+    header nav ul li a {
+        padding: 10px 15px;
+        font-size: 1.75vw;
+        text-decoration: none;
+        font-weight: lighter;
+        color: var(--tertiary-color);
+        background-color: transparent;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    }
+
+    header nav ul li a:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border-radius: 15px;
+        text-shadow: none;
+    }
+    /* Header Nav Styles End */
+
+  /*Header styles end*/
+
+  /* FOOTER STYLES START */
+  footer {
+    background: var(--primary-color);
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+  
+  footer h2 {
+    color: var(--tertiary-color);
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer div {
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  /* END FOOTER STYLES */
+
+  /*Hero Styles Start*/
+  .hero {
+    
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-image: url('../Images/153rd\ c130.jpg');
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 20vw;
+  }
+
+  .hero h2 {
+      margin: 3vw;
+      font-size: 2vw;
+  }
+  /* Hero Styles End */
+  
+  /* Main styles start */
+
+    /* About ME Styles Start */
+    .about-me {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 30px auto;
+        color: var(--tertiary-color);
+        width: 80%;
+        background:var(--secondary-color);
+    }
+
+    .about-me h3 {
+        font-size: 3vw;
+        border-right: 2px solid var(--primary-color);
+        padding-right: 20px;
+        width: 13vw;
+        text-align: right;
+    }
+
+    .about-me .right {
+        width: 70%;
+    }
+    .about-me .right p {
+        font-size: 1.55vw;
+    }
+    /* About Me Styles End */
+
+    /* Work Styles Start */
+
+    .work {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 30px auto;
+        color: var(--tertiary-color);
+        width: 80%;
+        background: var(--secondary-color);
+    }
+
+    .work h3 {
+        font-size: 3vw;
+        border-right: 2px solid var(--primary-color);
+        padding-right: 20px;
+        width: 13vw;
+        text-align: right;
+    }
+
+    .work .right {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .work .right .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    .work .right a {
+        border: thick solid var(--primary-color);
+    }
+ 
+    .work .right .main {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 20vw;
+        background-image: url('../Images/Adventure-Screenshot-Dark.png');
+        background-size: cover;
+        background-position: left top;
+        align-items: flex-end;
+    }
+
+    .work .right .main:hover {
+        background-image: url('../Images/Adventure-Screenshot.png');
+    }
+
+    .work .right .secondary {
+        display: flex;
+        margin-top: 10px;
+        width: 49%;
+        height: 125px;
+        flex-direction: row;
+        align-items: flex-end;
+        
+    }
+
+    .work .right .horiseon {
+        background-image: url('../Images/horsieon\ dark.png');
+        background-size: cover;
+        background-position: left top;
+    }
+
+    .work .right .horiseon:hover {
+        background-image: url('../Images/horsieon.png');
+    }
+
+    .work .right .robot {
+        background-image: url('../Images/robot-gladiators\ dark.png');
+        background-size: cover;
+        background-position: left top;
+    }
+
+    .work .right .robot:hover {
+        background-image: url('../Images/robot-gladiators.png');
+    }
+
+    .work .right .portfolio {
+        background-image: url('../Images/Read-My-Lips-screenshot\ dark.png');
+        background-size: cover;
+        background-position: left top;
+    }
+
+    .work .right .portfolio:hover {
+        background-image: url('../Images/Read-My-Lips-screenshot.png');
+    }
+
+    .work .right .streamguard {
+        background-image: url('../Images/StreamGuard\ dark.png');
+        background-size: cover;
+        background-position: left top;
+    }
+
+    .work .right .streamguard:hover {
+        background-image: url('../Images/StreamGuard.png');
+    }
+
+    .work .right a div {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 0, 0, 1);
+        height: 70px;
+        width: auto;
+        margin-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        justify-content: center;
+    }
+
+    .work .right h4 {
+        font-size: 1.55vw;
+        text-decoration: none;
+        color: var(--tertiary-color);
+    }
+
+    .work p {
+        color: var(--tertiary-color);
+        font-size: 1.25vw;
+    }
+    /* Work Styles End */
+
+    /* Conact Me Section */
+    .contact-me {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 30px auto;
+        color: var(--tertiary-color);
+        width: 80%;
+        background:var(--secondary-color);
+    }
+
+    .contact-me h3 {
+        font-size: 3vw;
+        border-right: 2px solid var(--primary-color);
+        padding-right: 20px;
+        width: 13vw;
+        text-align: right;
+    }
+
+    .contact-me .right {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-me .right a {
+        font-size: 1.55vw;
+        text-decoration: underline;
+        color: var(--tertiary-color);
+    }
+
+    .contact-me .right a:hover {
+        color: var(--primary-color);
+    }
+    /* Contact Styles End */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    html {
+        scroll-padding-top: 0px;
+    }
+
+    header {
+        padding: 0px;
+        justify-content: center;
+        position: relative;
+    }
+  
+    .left {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .left h1 {
+        padding-left: 20px;
+        min-width: 200px;
+        font-size: 30px;
+    }
+  
+    header nav ul {
+        margin: 20px 0px;
+        width: 100%;
+        justify-content: center;
+    }
+  
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h2 {
+        margin: 0;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .about-me h3 {
+        width: 130px;
+        font-size: 25px;
+    }
+
+    .work h3 {
+        width: 130px;
+        font-size: 25px;
+    }
+
+    .contact-me h3 {
+        width: 130px;
+        font-size: 25px;
+    }
+
+    .about-me .right p {
+        font-size: 18px;
+    }
+
+    .work .right .main {
+        height: 150px;
+    }
+
+    .work .right h4 {
+        font-size: 16px;
+    }
+
+    .work p {
+        font-size: 12px;
+    }
+
+    .contact-me .right {
+        justify-content: left;
+    }
+
+    .contact-me .right a {
+        flex: 0 100%;
+        font-size: 16px;
+        padding: 15px 0px;
+    }
+
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+    nav ul li {
+        padding: 10px 0px;
+        text-align: center;
+        flex: 0 100%;
+    }
+
+    .hero h2 {
+        font-size: 15px;
+    }
+
+    .about-me {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        padding-top: 20px  
+    }
+
+    .about-me h3 {
+        flex: 0 80%;
+        text-align: center;
+        border-bottom: 2px solid var(--primary-color);
+        border-right: none;
+        
+    }
+    
+    .about-me .right {
+        padding-top: 30px;
+    }
+    
+    .work {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        padding-top: 20px  
+    }
+
+    .work h3 {
+        flex: 0 80%;
+        border-bottom: 2px solid var(--primary-color);
+        border-right: none;
+        text-align: center;
+        padding-right: 0px;
+    }
+    
+    .work .right {
+        padding-top: 30px;
+    }
+
+
+    .contact-me {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+        padding-top: 20px;
+        
+    }
+
+    .contact-me h3 {
+        flex: 0 80%;
+        text-align: center;
+        border-bottom: 2px solid var(--primary-color);
+        border-right: none;
+        padding-right: 0px;
+    }
+}
