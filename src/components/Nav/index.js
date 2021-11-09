@@ -1,37 +1,78 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from 'react';
 
 function Nav(props) {
   const {
-    categories = [],
-    setCurrentCategory,
+    aboutSelected,
+    setAboutSelected,
+    portfolioSelected,
+    setPortfolioSelected,
     contactSelected,
-    currentCategory,
     setContactSelected,
-  } = props;
+    resumeSelected,
+    setResumeSelected,
 
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
+  } = props;
 
   return (
     <header className="flex-row px-1">
       <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> 📸</span> Oh Snap!
+        <a data-testid="link" href="/" className="leftHeader">
+          <span role="img" aria-label="camera"> <img src="./assets/Images/Joe.jpg" alt="JOE TREMOLS, Software Developer" className="leftImg"></img></span> 
+          <h1 className="leftName">Joe Tremols</h1>
         </a>
       </h2>
-      <nav>
+      <nav className="navAlign">
         <ul className="flex-row">
-          <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+          <li className={`mx-2 onHover ${aboutSelected && 'navActive'}`}>
+            <a className="onHover" data-testid="about" href="#about" onClick={() => {
+                setAboutSelected(true);
+                setPortfolioSelected(false); 
+                setContactSelected(false); 
+                setResumeSelected(false);
+              }}
+            >
               About me
             </a>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
+          <li className={`mx-2 onHover ${portfolioSelected && 'navActive'}`}>
+            <span 
+              onClick={() => {
+                setAboutSelected(false);
+                setPortfolioSelected(true); 
+                setContactSelected(false); 
+                setResumeSelected(false);
+              }}
+            >
+              Portfolio
+            </span>
           </li>
-          {categories.map((category) => (
+          <li className={`mx-2 onHover ${contactSelected && 'navActive'}`}>
+            <span
+              onClick={() => {
+                setAboutSelected(false);
+                setPortfolioSelected(false); 
+                setContactSelected(true); 
+                setResumeSelected(false);
+              }}
+            >
+              Contact
+            </span>
+          </li>
+          <li className={`mx-2 onHover ${resumeSelected && 'navActive'}`}>
+            <span
+              onClick={() => {
+                setAboutSelected(false);
+                setPortfolioSelected(false); 
+                setContactSelected(false); 
+                setResumeSelected(true);
+              }}
+            >
+              Resume
+            </span>
+          </li>
+
+
+          {/* {categories.map((category) => (
             <li
               className={`mx-1 ${
                 currentCategory.name === category.name && !contactSelected && 'navActive'
@@ -47,7 +88,7 @@ function Nav(props) {
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>
-          ))}
+          ))} */}
         </ul>
       </nav>
     </header>

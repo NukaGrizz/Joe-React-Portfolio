@@ -4,9 +4,9 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #f3a847;
-  --tertiary: #b12704;
+  --primary-color: red;
+  --secondary-color: black;
+  --tertiary-color: #f4f4fa;
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
@@ -289,3 +289,173 @@ a {
 .navActive {
   color: var(--secondary);
 }
+
+.leftImg {
+  border-radius: 50%;
+  height: 7vw;
+  min-height: 90px;
+  padding: 0px 35px;
+}
+
+.leftName {
+  text-align: center;
+  padding-left: 10px;
+  font-weight: bold;
+  margin: 0;
+  font-size: calc(2.5vw);
+}
+
+.leftHeader {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.navAlign{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.onHover:hover{
+  color: #f3a847;
+}
+
+/* Work Styles Start */
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: var(--tertiary-color);
+  width: 80%;
+  background: var(--secondary-color);
+}
+
+.work h3 {
+  font-size: 3vw;
+  border-right: 2px solid var(--primary-color);
+  padding-right: 20px;
+  width: 13vw;
+  text-align: right;
+}
+
+.work .right {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.work .right .break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.work .right a {
+  border: thick solid var(--primary-color);
+}
+
+.work .right .main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20vw;
+  background-image: url('./assets/Images/Adventure-Screenshot-Dark.png');
+  background-size: cover;
+  background-position: left top;
+  align-items: flex-end;
+}
+
+.work .right .main:hover {
+  background-image: url('./assets/Images/Adventure-Screenshot.png');
+}
+
+.work .right .main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20vw;
+  background-image: url('./assets/Images/Adventure-Screenshot-Dark.png');
+  background-size: cover;
+  background-position: left top;
+  align-items: flex-end;
+}
+
+.work .right .main:hover {
+  background-image: url('./assets/Images/Adventure-Screenshot.png');
+}
+
+.work .right .secondary {
+  display: flex;
+  margin-top: 10px;
+  width: 49%;
+  height: 125px;
+  flex-direction: row;
+  align-items: flex-end;
+  
+}
+
+.work .right .horiseon {
+  background-image: url('./assets/Images/horsieon\ dark.png');
+  background-size: cover;
+  background-position: left top;
+}
+
+.work .right .horiseon:hover {
+  background-image: url('./assets/Images/horsieon.png');
+}
+
+.work .right .robot {
+  background-image: url('./assets/Images/robot-gladiators\ dark.png');
+  background-size: cover;
+  background-position: left top;
+}
+
+.work .right .robot:hover {
+  background-image: url('./assets/Images/robot-gladiators.png');
+}
+
+.work .right .portfolio {
+  background-image: url('./assets/Images/Read-My-Lips-screenshot\ dark.png');
+  background-size: cover;
+  background-position: left top;
+}
+
+.work .right .portfolio:hover {
+  background-image: url('./assets/Images/Read-My-Lips-screenshot.png');
+}
+
+.work .right .streamguard {
+  background-image: url('./assets/Images/StreamGuard\ dark.png');
+  background-size: cover;
+  background-position: left top;
+}
+
+.work .right .streamguard:hover {
+  background-image: url('./assets/Images/StreamGuard.png');
+}
+
+.work .right a div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 0, 0, 1);
+  height: 70px;
+  width: auto;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  justify-content: center;
+}
+
+.work .right h4 {
+  font-size: 1.55vw;
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.work p {
+  color: var(--tertiary-color);
+  font-size: 1.25vw;
+}
+/* Work Styles End */
