@@ -16,7 +16,7 @@ function Nav(props) {
     <header className="flex-row px-1">
       <h2>
         <a data-testid="link" href="/" className="leftHeader">
-          <span role="img" aria-label="camera"> <img src="./assets/Images/Joe.jpg" alt="JOE TREMOLS, Software Developer" className="leftImg"></img></span> 
+          <span role="img" aria-label="camera"> <img src={require(`../../assets/Images/Joe.jpg`).default} alt="JOE TREMOLS, Software Developer" className="leftImg"></img></span> 
           <h1 className="leftName">Joe Tremols</h1>
         </a>
       </h2>
