@@ -7,6 +7,7 @@ main {
   --primary-color: red;
   --secondary-color: black;
   --tertiary-color: #f4f4fa;
+  --fourth-color: #f3a847;
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
@@ -92,9 +93,7 @@ header {
   background: var(--dark);
 }
 
-header a {
-  color: var(--light);
-}
+
 
 button {
   font-size: 1rem;
@@ -287,7 +286,7 @@ a {
 }
 
 .navActive {
-  color: var(--secondary);
+  color: var(--fourth-color);
 }
 
 .leftImg {
@@ -318,7 +317,7 @@ a {
 }
 
 .onHover:hover{
-  color: #f3a847;
+  color: var(--fourth-color);
 }
 
 /* Work Styles Start */
@@ -328,7 +327,6 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   color: var(--tertiary-color);
-  width: 80%;
   background: var(--secondary-color);
 }
 
@@ -365,6 +363,7 @@ a {
   background-size: cover;
   background-position: left top;
   align-items: flex-end;
+  margin-top: 10px;
 }
 
 .work .right .main:hover {
@@ -459,3 +458,20 @@ a {
   font-size: 1.25vw;
 }
 /* Work Styles End */
+
+.resumeCenter{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.resumeCenter h4{
+  align-self: flex-start;
+}
+
+.resumePara{
+  justify-content:center;
+  width: 100%;
+  
+  
+}

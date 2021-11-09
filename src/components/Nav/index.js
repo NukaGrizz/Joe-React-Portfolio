@@ -10,7 +10,6 @@ function Nav(props) {
     setContactSelected,
     resumeSelected,
     setResumeSelected,
-
   } = props;
 
   return (
@@ -24,7 +23,7 @@ function Nav(props) {
       <nav className="navAlign">
         <ul className="flex-row">
           <li className={`mx-2 onHover ${aboutSelected && 'navActive'}`}>
-            <a className="onHover" data-testid="about" href="#about" onClick={() => {
+            <span onClick={() => {
                 setAboutSelected(true);
                 setPortfolioSelected(false); 
                 setContactSelected(false); 
@@ -32,7 +31,7 @@ function Nav(props) {
               }}
             >
               About me
-            </a>
+            </span>
           </li>
           <li className={`mx-2 onHover ${portfolioSelected && 'navActive'}`}>
             <span 

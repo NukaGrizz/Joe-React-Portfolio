@@ -3,19 +3,10 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
-  const [categories] = useState([
-    {
-      name: 'commercial',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
-    },
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
-  ]);
-
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  
   const [aboutSelected, setAboutSelected] = useState(true);
   const [contactSelected, setContactSelected] = useState(false);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
@@ -41,8 +32,7 @@ function App() {
         ) : (<></>)}
         {portfolioSelected ? (
           <>
-            <Gallery currentCategory={currentCategory}></Gallery>
-            
+            <Gallery></Gallery>
           </>
         ) : (<></>)}
         {contactSelected ? (
@@ -52,11 +42,20 @@ function App() {
         ) : (<></>)}
         {resumeSelected ? (
           <>
-          <></>
+          <Resume></Resume>
           </>
         ) : (<></>)}
         
       </main>
+      <footer>
+            <a className="mx-2 onHover" href="https://github.com/NukaGrizz">GitHub</a>
+            <a className="mx-2 onHover" href="https://www.linkedin.com/in/joetremols/">LinkedIn</a>
+            <a className="mx-2 onHover" href="https://www.facebook.com/joetremols">Facebook</a>
+            <p>
+            &copy; 2021 Joe Tremols
+            </p>
+
+        </footer>
     </div>
   );
 }
