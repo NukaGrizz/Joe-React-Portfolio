@@ -13,7 +13,7 @@
 
   ## ScreenShot
   
-  ![alt text](.public/assets/images/Screenshot.png)
+  ![alt text](./public/assets/images/Screenshot.png)
 
   ## Collaborators
   Joe Tremols
