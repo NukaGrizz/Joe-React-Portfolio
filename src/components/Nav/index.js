@@ -15,9 +15,9 @@ function Nav(props) {
   return (
     <header className="flex-row px-1">
       <h2>
-        <a data-testid="link" href="/" className="leftHeader">
+        <a data-testid="link" href="https://nukagrizz.github.io/Joe-React-Portfolio/" className="leftHeader">
           <span role="img" aria-label="camera"> <img src={require(`../../assets/Images/Joe.jpg`).default} alt="JOE TREMOLS, Software Developer" className="leftImg"></img></span> 
-          <h1 className="leftName">Joe Tremols</h1>
+          <h2 className="leftName">Joe Tremols</h2>
         </a>
       </h2>
       <nav className="navAlign">
