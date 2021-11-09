@@ -47,7 +47,7 @@ function App() {
         ) : (<></>)}
         
       </main>
-      <footer>
+      <footer className="resumeCenter">
             <a className="mx-2 onHover" href="https://github.com/NukaGrizz">GitHub</a>
             <a className="mx-2 onHover" href="https://www.linkedin.com/in/joetremols/">LinkedIn</a>
             <a className="mx-2 onHover" href="https://www.facebook.com/joetremols">Facebook</a>

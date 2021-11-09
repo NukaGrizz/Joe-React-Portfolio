@@ -3,18 +3,17 @@ import React from 'react';
 function Gallery() {
   return (
     <section id="work" class="work">
-            <h3>Work</h3>
             <article class="right">
-                <a class="main" href="http://myadventureteam.herokuapp.com/" title="My Adventure website">
+                <a class="main Adventure" href="http://myadventureteam.herokuapp.com/" title="My Adventure website">
                     <div>
                         <h4>My Adventure</h4>
-                        <p>HTML/CSS/JS/MySQL/HandleBars/Express/Sequlize</p>
+                        <p>HTML/CSS/JS/MySQL/HandleBars/Express</p>
                     </div>
                 </a>
-                <a class="main" href="http://myadventureteam.herokuapp.com/" title="My Adventure website">
+                <a class="main Social" href="https://github.com/NukaGrizz/socialmediaAPI" title="My Adventure website">
                     <div>
-                        <h4>My Adventure</h4>
-                        <p>HTML/CSS/JS/MySQL/HandleBars/Express/Sequlize</p>
+                        <h4>Social Media API</h4>
+                        <p>JS/NoSQL/Express/MongoDB/Mongoose</p>
                     </div>
                 </a>
                 <a href="https://nukagrizz.github.io/Horiseon-Social-Solution-Services/" class="secondary horiseon" title="Horiseon website">
@@ -38,7 +37,7 @@ function Gallery() {
                 <a href="https://flying-dink.github.io/Read-My-Lips/" class="secondary portfolio" title="Read My Lips Game" >
                     <div>
                         <h4>Read My Lips</h4>
-                        <p>HTML/CSS/JS/JQuery</p>
+                        <p>HTML/CSS/JS</p>
                     </div>
                 </a>
 
