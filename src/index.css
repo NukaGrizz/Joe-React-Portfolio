@@ -382,6 +382,14 @@ a {
   background-image: url('./assets/Images/Adventure-Screenshot.png');
 }
 
+.Moarkett {
+  background-image: url('./assets/Images/Moarkett-Dark.png');
+}
+
+.Moarkett:hover {
+  background-image: url('./assets/Images/Moarkett.png');
+}
+
 .work .right .secondary {
   display: flex;
   margin-top: 10px;
