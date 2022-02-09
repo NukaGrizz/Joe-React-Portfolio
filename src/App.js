@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
@@ -6,7 +6,9 @@ import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 
 function App() {
-  
+  useEffect(() => {
+    document.title = "Joe Tremols"
+  }, [])
   const [aboutSelected, setAboutSelected] = useState(true);
   const [contactSelected, setContactSelected] = useState(false);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
@@ -51,8 +53,9 @@ function App() {
             <a className="mx-2 onHover" href="https://github.com/NukaGrizz">GitHub</a>
             <a className="mx-2 onHover" href="https://www.linkedin.com/in/joetremols/">LinkedIn</a>
             <a className="mx-2 onHover" href="https://www.facebook.com/joetremols">Facebook</a>
+            <a className="mx-2 onHover" href="mailto:NukaGrizz@gmail.com">NukaGrizz@gmail.com</a>
             <p>
-            &copy; 2021 Joe Tremols
+            &copy; 2022 Joe Tremols
             </p>
 
         </footer>

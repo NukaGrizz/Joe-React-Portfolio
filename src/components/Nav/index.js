@@ -13,7 +13,7 @@ function Nav(props) {
   } = props;
 
   return (
-    <header className="flex-row px-1">
+    <header className="flex-row px-1 navBackground">
       <h2>
         <a data-testid="link" href="https://nukagrizz.github.io/Joe-React-Portfolio/" className="leftHeader">
           <span role="img" aria-label="camera"> <img src={require(`../../assets/Images/Joe.jpg`).default} alt="JOE TREMOLS, Software Developer" className="leftImg"></img></span> 
@@ -45,7 +45,7 @@ function Nav(props) {
               Portfolio
             </span>
           </li>
-          <li className={`mx-2 onHover ${contactSelected && 'navActive'}`}>
+          {/* <li className={`mx-2 onHover ${contactSelected && 'navActive'}`}>
             <span
               onClick={() => {
                 setAboutSelected(false);
@@ -56,7 +56,7 @@ function Nav(props) {
             >
               Contact
             </span>
-          </li>
+          </li> */}
           <li className={`mx-2 onHover ${resumeSelected && 'navActive'}`}>
             <span
               onClick={() => {
